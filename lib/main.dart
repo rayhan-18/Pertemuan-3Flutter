@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontStyle: FontStyle.italic,
                   fontSize: 30,
-                  color: Colors.blue,
+                  color: Color.fromARGB(255, 32, 223, 7),
                 ),
               ),
             ],
