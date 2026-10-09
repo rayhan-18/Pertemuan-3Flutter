@@ -37,6 +37,36 @@ class MyApp extends StatelessWidget {
                   color: Color.fromARGB(255, 243, 145, 33),
                 ),
               ),
+
+              SizedBox(height: 30),
+
+              Text(
+                'letter Spacing',
+                style: TextStyle(
+                  fontSize: 30,
+                  letterSpacing: 5,
+                )),
+
+                SizedBox(height: 30),
+
+                Text(
+                  'Word Spacing Example',
+                  style: TextStyle(
+                    fontSize: 30,
+                    wordSpacing: 10,
+                  ),
+                ),
+
+                SizedBox(height: 40),
+                
+                Text(
+                    'Line 1\nLine 2\nLine 3',
+                    style: TextStyle(
+                    fontSize: 20,
+                    height: 2,
+                  ),
+                ),
+
               Text (
                 'Italic',
                 style: TextStyle(
