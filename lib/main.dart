@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Hello Rayhan!',
+                  'Hello Rayhan Ganteng!',
                   style: TextStyle(fontSize: 30, color: Colors.blue),
                 ),
                 Text(
@@ -118,11 +118,48 @@ class MyApp extends StatelessWidget {
                     color: Color.fromARGB(255, 32, 223, 7),
                   ),
                 ),
+                SizedBox(height: 40),
+                AlignmentTextWidget(),
               ],
             ), 
           ), 
         ), 
       ), 
+    );
+  }
+}
+class AlignmentTextWidget extends StatelessWidget {
+  const AlignmentTextWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        border: Border.all(),
+      ),
+      child: const Column(
+        children: [
+          Text(
+            'Left',
+            textAlign: TextAlign.left,
+          ),
+          Text(
+            'Center',
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            'Right',
+            textAlign: TextAlign.right,
+          ),
+          Text(
+            'Justify: Flutter adalah framework '
+            'untuk membuat aplikasi menggunakan '
+            'satu codebase.',
+            textAlign: TextAlign.justify,
+          ),
+        ],
+      ),
     );
   }
 }
